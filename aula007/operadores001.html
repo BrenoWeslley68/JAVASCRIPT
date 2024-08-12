@@ -6,7 +6,11 @@
     <title>Operadores Parte 1</title>
 </head>
 <body>
-    <!--Operadores:
+
+    <!--
+    Primeiro irei resolver todos os operdores aritméticos, depois relacionais e por ultimo os lógicos
+    
+    Operadores:
                     *Aritméticos
                         > +
                             EX: 5+2 =7
@@ -20,8 +24,17 @@
                             EX: 5%2 = 1 >>O % é utilizado no resto da divisão de números inteiros EX 5/2: 5-4 resta 1, o valor de % é 1
                         > **
                             EX: 5**2 = 25
-                    *Prencedência
+                    *Precedência
                         > () > ** > *, / ,% > +,- os precedentes seguem essa ordem dos simbolos na resolução de métricas matemáticas
+
+                        Primeiro irei resolver todos os operdores aritméticos, depois relacionais e por ultimo os lógicos
+                        (), **, / ... 
+                        >,<, >= ...
+                        !
+                        &&
+                        ||
+
+
                     *atribuição
                         > Atribuições simples
                             EX: var n1, var n2, var n3, var n4, var n5 são realizadas operações matemáticas com números
@@ -30,6 +43,9 @@
                                 n1 = n1+4 =7 Ou seja, recebe atribuições por um valor já originário
                                 podemos simplificar essa operação acima apenas com n1+=4 = 7 com isso n1 recebe ele mesmo mais 4 isso pode ser feito em +,-,*,/,%, **
                                 Também pode ser adicionado um valor ou subtraído o mesmo através do n1++ ou n1--
+
+
+
                     *relacionais
                         >  
                             5 > 2 = true
@@ -43,8 +59,34 @@
                             5 == 5 = true
                         !=
                             4 != 4 = false
+
+
                     *lógicos
-                    *ternário-->
+                        !
+                            Negação
+                                ex: eu quero uma caneta azul, e não preta.
+                                    > true
+                                    > false
+                        &&
+                            Conjunção
+                                EX: Eu quero uma caneta azul E uma preta
+
+                        ||
+                            Disjunção
+                                EX: Eu quero uma caneta azul OU preta
+
+
+                    *ternário
+                        teste ? true : false
+                        média >= 7.0 ? "Aprovado" : "Reprovado"
+                    
+                    -->
+                        <script>
+                            var nome = window.prompt('digite su nome aqui')
+                            var idade = window.prompt('Digite a sua idade aqui')
+                            window.alert(`O seu nome é ${nome} e a sua idade é ${idade} <br/>
+                            já o seu nome em maiúsculo é ${nome.toUpperCase()} e em minúsculo é ${nome.toLowerCase()}`)
+                        </script>
 
 </body>
 </html>
