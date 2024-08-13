@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="number1" id="number1"> +
+    <input type="number" name="number2" id="number2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar(){
+            var numero1 = document.getElementById('number1')
+            var numero2 = document.getElementById('number2')
+            var n1 = Number(numero1.value)
+            var n2 = Number(numero2.value)
+            var soma = n1 + n2
+            res.innerText = soma
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        div{
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        #area{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+        #local{
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <div id="local">
+        interaja com esse também
+    </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        local.addEventListener('click', clicando)
+        local.addEventListener('mouseenter', entrando)
+        local.addEventListener('mouseout', saindo)
+
+        function clicar() {
+            area.innerText = 'clicou!'
+            area.style.background = 'blue'
+            area.style.color = 'white'
+        }
+        function entrar() {
+            area.innerText = 'Entrou'
+            area.style.background = 'yellow'
+            area.style.color = 'black'
+        }
+        function sair() {
+            area.innerText = 'Saiu'
+            area.style.background = 'orange'
+            area.style.color = 'black'
+        }
+        function clicando(){
+            var local = window.document.getElementById('local')
+            local.innerText = 'clicando'
+            local.style.background = 'lightblue'
+        }
+        function entrando(){
+            window.document.getElementById('local')
+            local.innerText = 'entrando'
+            local.style.background = 'lightgreen'
+        }
+        function saindo(){
+            window.document.getElementById('local')
+            local.innerText = 'saindo'
+            local.style.background = 'orange'
+        }
+    </script>
+    <!--
+    Eventos: é tudo aquilo que pode acontercer com determinado elemento.
+
+    Exemplo de eventos: 
+        mouseenter: Quando passamos o mouse por cima de algum elemento, ocorre um evento;
+        mousemove: ocorre enquanto continuamos a passar o mouse dentro do elemento;
+        mousedown: Ocorre quando clicamos e seguramos o click do mouse encima de algum elemento;
+        mouseup: Ocorre assim que eu solto o click do mouse que estava segurado.
+        click: Ocorre quando clicamos e soltamos rapidamente o mouse;
+        mouseout: Ocorre da mesma forma que o mouseenter, assim que retirarmos o mouse da zona do elemento, esse evento será disparado
+
+    Função: É um conjunto de códigos, linhas que serão executadas apenas quando o evento ocorrer
+        Bloco: Bloco é um conjunto de linhas, e para delimitar um bloco em JavaScript, utilizamos function ação(paramêtros){}
+        Para 
+    -->
+    
+</body>
+</html>
