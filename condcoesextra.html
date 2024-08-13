@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran extra</title>
+</head>
+<body>
+    <h1>País</h1>
+    <input type="text" name="pais1" id="pais1">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar() {
+            var n2 = window.document.getElementById('pais1').value
+            var resu = window.document.getElementById('res')
+            resu.innerHTML = (`Se você nasceu em ${n2}`)
+            if(n2 == 'Brasil') {
+                resu.innerHTML +=("<p>Você é Brasileiro</p>")
+            } else{
+                resu.innerHTML +=(`<p>Você é estrangeiro</p>`)
+            }
+        }
+
+    </script>
+
+
+    
+</body>
+</html>
