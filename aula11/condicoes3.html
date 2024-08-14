@@ -14,18 +14,20 @@
     
 
     <script>
-        function calcular() {
-            var n1 = window.document.getElementById('vel1')
-            var soma = window.document.getElementById('res')
-            var vel = Number(n1.value)
-
-            soma.innerHTML = `<p> A sua velocidade foi de ${vel}`
-                if(vel>60){
-                soma.innerHTML += `<p> A sua Velocidade ultrapassou nosso limite máximo, MULTADO`
+        
+    </script>
+    <script>
+        function calcular(){
+        var n1 = window.document.getElementById('vel1')
+        var soma = window.document.getElementById('res')
+        var vel = Number(n1.value)
+        soma.innerHTML = `<p> A sua velocidade foi de ${vel}</p>`
+            if(vel > 60) {
+                soma.innerHTML += `<p> A sua velocidade ultrapassou o limite de velocidade, MULTADO </p>`
             }
-            soma.innerHTML += `<p> Dirige com sinto de segurança!</p>`
-            
+            soma.innerHTML(`<p> Dirige com sinto de segurança! </p>`)
         }
+
     </script>
 
     
