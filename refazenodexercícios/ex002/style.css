@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(2, 133, 133);
+}
+header{
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+section{
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+div{
+    text-align: center;
+    margin: 10px;
+}
+img{
+    border-radius: 200px;
+}
+footer{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}

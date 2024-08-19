@@ -49,5 +49,6 @@ function verificar() //Esta é a função que é executada quando o botão "Veri
   }
   res.innerHTML = `Detectamos ${gênero} com ${idade} anos <br/> <br/>` //Aqui mostramos o texto com o gênero e a idade do usuário.
   res.appendChild(img) //Finalmente, adicionamos a imagem ao resultado.
+  
 
 }

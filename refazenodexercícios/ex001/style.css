@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #06B9F5;
+    color: white;
+    text-align: center;
+    
+}
+header{
+    margin: 20px 0px 20px 0px;
+}
+section{
+    color: black;
+    background-color: white;
+    width: 700px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
+
+footer{
+    margin-top: 20px;
+}

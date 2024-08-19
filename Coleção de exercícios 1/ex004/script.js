@@ -9,6 +9,7 @@ function contar() {
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         // Se algum campo estiver vazio, exibe uma mensagem de erro
         window.alert('Erro, insira um valor')
+        return;
     } else {
         // Converte os valores de entrada para números
         var i = Number(inicio.value)
