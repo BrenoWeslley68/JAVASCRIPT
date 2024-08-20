@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de idade</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Verificador de idade</h1></header>
-    <main>
-      <section>
-        <p>
-            Ano de nascimento:
-            <input type="number" name="ano" id="iano">
+  <header><h1>Verificador de idade</h1></header>
+  <main>
+    <section>
+      <p>
+        <label for="inascimento">Ano de nascimento:</label>
+        <input type="number" name="nascimento" id="inascimento">
+      </p>
+      <p>
+      Sexo:
+      <input type="radio" name="sexo" id="msexo" checked>
+      <label for="msexo">Masculino</label>
+      <input type="radio" name="sexo" id="fsexo">
+      <label for="fsexo">Feminino</label>
         </p>
-        <p>
-            Sexo:
-            <input type="radio" name="sexo" id="msexo" checked>
-            <label for="msexo">Masculino</label>
-            <input type="radio" name="sexo" id="fsexo">
-            <label for="fsexo">Feminino</label>
-        </p>
-        <p><input type="button" value="Verificar" id="iano" onclick="verificar()"></p>
-
-        <div id="res"> O resultado aparecerá aqui</div>
-      </section>
-                
-            
-
-       
-    </main>
-    <footer>Breno Weslley</footer>
+        <p><input type="button" value="Verificar" onclick="Verificar()"></p>
+        <div id="res">
+          aqui aparecerá o resultado
+        </div>
+    </section>
+</main>
+  <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>

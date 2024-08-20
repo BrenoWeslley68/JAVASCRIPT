@@ -24,6 +24,8 @@ div{
 }
 img{
     border-radius: 200px;
+    margin: auto;
+    display: block;
 }
 footer{
     text-align: center;

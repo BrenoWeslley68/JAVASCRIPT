@@ -1,4 +1,4 @@
-function contar () {
+function Contar () {
     var inicio = document.getElementById('iinicio')
     var fim = document.getElementById('ifim')
     var passo = document.getElementById('ipasso')
@@ -9,9 +9,10 @@ function contar () {
         var i = Number(inicio.value)
         var f = Number(fim.value)
         var p = Number(passo.value)
-        res.innerHTML = `Contando: `
-        for(var c = i; c<= f; c+=p){
+        res.innerHTML = `Contando:`
+        for (var c = i; c<=f; c+=p) {
             res.innerHTML += `${c} `
         }
+
     }
 }

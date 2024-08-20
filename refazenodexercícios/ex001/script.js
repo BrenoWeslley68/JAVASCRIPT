@@ -1,1 +1,1 @@
-window.alert("ola")
+window.alert('Olá')
