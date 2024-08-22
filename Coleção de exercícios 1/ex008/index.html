@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>LAMPADA JS</h1>
+        </div>
+    </header>
+    <main>
+        <div id="res"><img src="img/desligada.jpg" alt="Foto de lampada desligada" id="foto"  onmouseenter="Ligar()" onmouseleave="Desligar()" onclick="Quebrar()"></div>
+    </main>
+    <footer>
+        <p>
+            <input type="button" value="Ligar" onclick="ligar()">
+            <input type="button" value="Desligar" onclick="desligar()">
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
