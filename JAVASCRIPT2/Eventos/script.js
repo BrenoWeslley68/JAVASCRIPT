@@ -41,5 +41,22 @@ function Moveu(){
     let div = document.getElementById('cor')
     div.style.background = 'purple'
 }
-
+function Limpar(){
+    let div = document.getElementById('inome').value = ''
+    
+}
+function Mudanca(){
+    let div = document.getElementById('inome')
+    console.log('Mudou algo')
+    
+}
+function Desfocou(){
+    alert('desfocou')
+}
+function Pressionou(){
+    document.body.style.background = 'lightblue'
+}
+function Carregou(){
+    alert('A página carregou')
+}
 
