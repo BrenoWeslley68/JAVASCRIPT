@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" name="display" id="display" class="display">
+        <div class="calculator-buttons">
+            <button id="ce">CE</button>
+            <button id="c" onclick="limpar()">C</button>
+            <button id="**"><<</button>
+            <button id="/" onclick="operacaoDividir()">/</button>
+            <button id="7" onclick="adicionarNu('7')">7</button>
+            <button id="8"onclick="adicionarNu('8')">8</button>
+            <button id="9"onclick="adicionarNu('9')">9</button>
+            <button id="*" onclick="operacaoVezes()">*</button>
+            <button id="4"onclick="adicionarNu('4')">4</button>
+            <button id="5"onclick="adicionarNu('5')">5</button>
+            <button id="6"onclick="adicionarNu('6')">6</button>
+            <button id="-" onclick="operacaoMenos()">-</button>
+            <button id="1"onclick="adicionarNu('1')">1</button>
+            <button id="2"onclick="adicionarNu('2')">2</button>
+            <button id="3"onclick="adicionarNu('3')">3</button>
+            <button id="+"onclick="operacaoMais()">+</button>
+            <button id="+-">+-</button>
+            <button id="0"onclick="adicionarNu('0')">0</button>
+            <button id="," onclick="operacaoVirgula()">,</button>
+            <button id="=" onclick= 'operacaoIgual()'>=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
