@@ -19,3 +19,5 @@ console.log(typeof(resultadoDuplicado));// A função typeof mostra que tipo de 
 
 
 
+
+
