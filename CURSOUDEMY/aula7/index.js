@@ -14,6 +14,8 @@ const resultado = primeiroNumero + segundoNumero
 const resultadoDuplicado = resultado * 2
 console.log(resultadoDuplicado)
 // String = Texto || Number = Número
+console.log(typeof(resultadoDuplicado));// A função typeof mostra que tipo de formato de entrada está inserido no conteúdo, se é uma string, um numero ou outros.
+
 
 
 
