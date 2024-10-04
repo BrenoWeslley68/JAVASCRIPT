@@ -16,7 +16,7 @@ JSON.stringify() -> Converte objetos em texto padrão JSON
     modelo: 'uno',
     motor:['1.6', '1.4', '1.0']
 }
-//CONVERTEU O TEXO NO NOSSO HTML
+//CONVERTEU O TEXTO NO NOSSO HTML
 let texto = JSON.stringify(carro);
 //COLOCOU O TEXTO EM NOSSO HTML
 document.getElementById('area').innerHTML = texto
